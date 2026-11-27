@@ -190,6 +190,7 @@ ISO/IEC 19510 graphical standard for deterministic, sequential workflows and orc
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v0cn037/ontologies/2026/10/process_modeling_tools#2_Industraial_&amp;_Manufacturing_&amp;_Shop-Floor_Operations">
         <rdf:type rdf:resource="http://www.semanticweb.org/v0cn037/ontologies/2026/10/process_modeling_tools#ModelingDomain"/>
+        <rdfs:comment>Focuses on physical production, shop-floor execution, supply chain, and lean value streams.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -198,6 +199,7 @@ ISO/IEC 19510 graphical standard for deterministic, sequential workflows and orc
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v0cn037/ontologies/2026/10/process_modeling_tools#3._Enterprise_Architecture_&amp;_Systems_Engineering">
         <rdf:type rdf:resource="http://www.semanticweb.org/v0cn037/ontologies/2026/10/process_modeling_tools#ModelingDomain"/>
+        <rdfs:comment>Focuses on aligning buisness processes with IT infrastructure, software architecture, and physical hardware systems.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -206,6 +208,7 @@ ISO/IEC 19510 graphical standard for deterministic, sequential workflows and orc
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v0cn037/ontologies/2026/10/process_modeling_tools#4_Process_Mining_&amp;_Automated_Discovery">
         <rdf:type rdf:resource="http://www.semanticweb.org/v0cn037/ontologies/2026/10/process_modeling_tools#ModelingDomain"/>
+        <rdfs:comment>Focuses on data-driven process modeling -- reconstructing actual &quot;as-is&quot; process models from IT event logs rather than manual drawing.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -214,6 +217,7 @@ ISO/IEC 19510 graphical standard for deterministic, sequential workflows and orc
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v0cn037/ontologies/2026/10/process_modeling_tools#5_Similation_&amp;_Discrete-Event_&amp;_Quantitative_Modeling">
         <rdf:type rdf:resource="http://www.semanticweb.org/v0cn037/ontologies/2026/10/process_modeling_tools#ModelingDomain"/>
+        <rdfs:comment>Focuses on stochastic modeling, resource bottlenecks, queueing theory, and system dynamics over time.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -222,6 +226,7 @@ ISO/IEC 19510 graphical standard for deterministic, sequential workflows and orc
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/v0cn037/ontologies/2026/10/process_modeling_tools#6_Data_&amp;_Integration_&amp;_Scientific/ML_Pipelines">
         <rdf:type rdf:resource="http://www.semanticweb.org/v0cn037/ontologies/2026/10/process_modeling_tools#ModelingDomain"/>
+        <rdfs:comment>Focuses on data transformation workflows, ETL/ELT, and computational execution graphs.</rdfs:comment>
     </owl:NamedIndividual>
     
 

@@ -1,0 +1,283 @@
+{
+  "version": "1.4.0-beta.0",
+  "graph": {
+    "nodes": [
+      {
+        "id": "n0",
+        "position": {
+          "x": -662.5,
+          "y": -132.50000000000003
+        },
+        "caption": "ModelingDomain"
+      },
+      {
+        "id": "n1",
+        "position": {
+          "x": -415.00000000000006,
+          "y": -133.33333333333331
+        },
+        "caption": "NotationOrStandard"
+      },
+      {
+        "id": "n2",
+        "position": {
+          "x": 164.99689221752612,
+          "y": 9.025039913931977
+        },
+        "caption": "LicenseModel"
+      },
+      {
+        "id": "n3",
+        "position": {
+          "x": -98.33333333333337,
+          "y": -134.16666666666666
+        },
+        "caption": "ProcessModelingTool"
+      },
+      {
+        "id": "n4",
+        "position": {
+          "x": 183.33333333333337,
+          "y": -205.00000000000003
+        },
+        "caption": "ExecutionCapability"
+      }
+    ],
+    "relationships": [
+      {
+        "id": "n0",
+        "type": "HAS_LICENSE",
+        "fromId": "n3",
+        "toId": "n2"
+      },
+      {
+        "id": "n1",
+        "type": "SUPPORTS_NOTATION",
+        "fromId": "n3",
+        "toId": "n1"
+      },
+      {
+        "id": "n2",
+        "type": "HAS_CAPABILITY",
+        "fromId": "n3",
+        "toId": "n4"
+      },
+      {
+        "id": "n3",
+        "type": "HAS_DOMAIN",
+        "fromId": "n1",
+        "toId": "n0"
+      }
+    ]
+  },
+  "dataModel": {
+    "version": "1.4.0-beta.0",
+    "graphSchemaRepresentation": {
+      "version": "1.0.0",
+      "graphSchema": {
+        "nodeLabels": [
+          {
+            "$id": "nl:n0",
+            "token": "ModelingDomain",
+            "properties": [
+              {
+                "$id": "p:1",
+                "token": "name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:n1",
+            "token": "NotationOrStandard",
+            "properties": [
+              {
+                "$id": "p:2",
+                "token": "name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:n2",
+            "token": "LicenseModel",
+            "properties": [
+              {
+                "$id": "p:3",
+                "token": "name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:n3",
+            "token": "ProcessModelingTool",
+            "properties": [
+              {
+                "$id": "p:4",
+                "token": "name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:n4",
+            "token": "ExecutionCapability",
+            "properties": [
+              {
+                "$id": "p:5",
+                "token": "name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          }
+        ],
+        "relationshipTypes": [
+          {
+            "$id": "rt:n0",
+            "token": "HAS_LICENSE",
+            "properties": []
+          },
+          {
+            "$id": "rt:n1",
+            "token": "SUPPORTS_NOTATION",
+            "properties": []
+          },
+          {
+            "$id": "rt:n2",
+            "token": "HAS_CAPABILITY",
+            "properties": []
+          },
+          {
+            "$id": "rt:n3",
+            "token": "HAS_DOMAIN",
+            "properties": []
+          }
+        ],
+        "nodeObjectTypes": [
+          {
+            "$id": "n:n0",
+            "labels": [
+              {
+                "$ref": "#nl:n0"
+              }
+            ]
+          },
+          {
+            "$id": "n:n1",
+            "labels": [
+              {
+                "$ref": "#nl:n1"
+              }
+            ]
+          },
+          {
+            "$id": "n:n2",
+            "labels": [
+              {
+                "$ref": "#nl:n2"
+              }
+            ]
+          },
+          {
+            "$id": "n:n3",
+            "labels": [
+              {
+                "$ref": "#nl:n3"
+              }
+            ]
+          },
+          {
+            "$id": "n:n4",
+            "labels": [
+              {
+                "$ref": "#nl:n4"
+              }
+            ]
+          }
+        ],
+        "relationshipObjectTypes": [
+          {
+            "$id": "r:n0",
+            "type": {
+              "$ref": "#rt:n0"
+            },
+            "from": {
+              "$ref": "#n:n3"
+            },
+            "to": {
+              "$ref": "#n:n2"
+            }
+          },
+          {
+            "$id": "r:n1",
+            "type": {
+              "$ref": "#rt:n1"
+            },
+            "from": {
+              "$ref": "#n:n3"
+            },
+            "to": {
+              "$ref": "#n:n1"
+            }
+          },
+          {
+            "$id": "r:n2",
+            "type": {
+              "$ref": "#rt:n2"
+            },
+            "from": {
+              "$ref": "#n:n3"
+            },
+            "to": {
+              "$ref": "#n:n4"
+            }
+          },
+          {
+            "$id": "r:n3",
+            "type": {
+              "$ref": "#rt:n3"
+            },
+            "from": {
+              "$ref": "#n:n1"
+            },
+            "to": {
+              "$ref": "#n:n0"
+            }
+          }
+        ],
+        "constraints": [],
+        "indexes": []
+      }
+    },
+    "graphSchemaExtensionsRepresentation": {
+      "nodeKeyProperties": []
+    },
+    "graphMappingRepresentation": {
+      "dataSourceSchema": {
+        "type": "local/csv",
+        "tableSchemas": []
+      },
+      "nodeMappings": [],
+      "relationshipMappings": []
+    },
+    "configurations": {
+      "idsToIgnore": []
+    }
+  }
+}
