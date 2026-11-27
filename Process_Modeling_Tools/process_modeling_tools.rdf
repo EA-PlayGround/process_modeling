@@ -1107,7 +1107,6 @@ Prefect, the maker of critical AI and data automation software, today announced 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoqi/ontologies/2026/10/process_modeling_tools#PlantUML">
         <rdf:type rdf:resource="http://www.semanticweb.org/xiaoqi/ontologies/2026/10/process_modeling_tools#ProcessModelingTool"/>
-        <process_modeling_tools1:hasCapability rdf:resource="http://www.semanticweb.org/xiaoqi/ontologies/2026/10/process_modeling_tools#DiagrammingOnly"/>
         <process_modeling_tools1:hasLicense rdf:resource="http://www.semanticweb.org/xiaoqi/ontologies/2026/10/process_modeling_tools#OpenSource"/>
         <process_modeling_tools1:supportsNotation rdf:resource="http://www.semanticweb.org/xiaoqi/ontologies/2026/10/process_modeling_tools#DFD"/>
         <process_modeling_tools1:supportsNotation rdf:resource="http://www.semanticweb.org/xiaoqi/ontologies/2026/10/process_modeling_tools#UML"/>
