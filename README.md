@@ -15,7 +15,32 @@ Ontology provides the foundation for representing concepts, relationships, const
 
 This leads to the next stage of exploration: the world of **BPMN, DMN, and MES**.
 
-![EKA Knowledge Evolution](img/EKA-Knowledge-Evolution.png)
+<!-- ![EKA Knowledge Evolution](img/EKA-Knowledge-Evolution.png) -->
+
+```mermaid
+---
+title: EKA Knowledge Evolution
+---
+flowchart LR
+    A["<b>Ontology Engineering</b><br/>Representing concepts, relationships and constraints"]
+    B["<b>Knowledge Graph</b><br/>Connecting structured enterprise knowledge"]
+    C["<b>BPMN + DMN + MES</b><br/>Modeling processes, decisions and operational execution"]
+    D["<b>Executable Intelligence</b><br/>The direction of EKA"]
+
+    A --> B --> C --> D
+
+    classDef ontology fill:#E8F0FC,stroke:#D6E3F5,stroke-width:1px,color:#172B4D
+    classDef knowledge fill:#E8F0FC,stroke:#D6E3F5,stroke-width:1px,color:#172B4D
+    classDef execution fill:#E2F4EF,stroke:#D0EAE2,stroke-width:1px,color:#173D35
+    classDef intelligence fill:#D7F1E9,stroke:#C5E7DC,stroke-width:1px,color:#123E32
+
+    class A ontology
+    class B knowledge
+    class C execution
+    class D intelligence
+
+    linkStyle default stroke:#666666,stroke-width:2.5px
+```
 
 This repository is intended to support that journey and contribute to the knowledge foundation for **EKA Volume 5**.
 
