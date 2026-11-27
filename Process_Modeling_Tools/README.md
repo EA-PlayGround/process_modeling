@@ -1,4 +1,4 @@
-# Process Modeling Tools Ontology (`process_modeling_tools.rdf`)
+# Process Modeling Tools Ontology ([process_modeling_tools.rdf](./process_modeling_tools.rdf))
 
 An open, living OWL/RDF knowledge graph that classifies and connects **Process Modeling Domains**, **Notations & Standards**, **Software Toolsets** (Commercial & Open-Source), **Execution Capabilities**, **Certifications**, and **Corporate Acquisitions**.
 
@@ -118,7 +118,7 @@ Load the ontology into a triple store (e.g., **Apache Jena**, **GraphDB**, **Bla
 
 #### Example SPARQL Query
 ```sparql
-PREFIX pmt: <http://www.semanticweb.org/v0cn037/ontologies/2026/10/process_modeling_tools#>
+PREFIX pmt: <http://www.semanticweb.org/xiaoqi/ontologies/2026/10/process_modeling_tools#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?tool ?notation ?capability
@@ -127,10 +127,14 @@ WHERE {
         pmt:hasLicense pmt:OpenSource ;
         pmt:supportsNotation ?notation ;
         pmt:hasCapability ?capability .
-  ?notation pmt:hasDomain pmt:1_Business_Process_&_Workflow_Modeling .
+  ?notation pmt:hasDomain <http://www.semanticweb.org/xiaoqi/ontologies/2026/10/process_modeling_tools#1_Business_Process_&_Workflow_Modeling> .
 }
 ORDER BY ?tool
 ```
+
+You may see below result in table format:
+
+![Sample_Sparql_Result](./Sample_Sparql_Result.png)
 
 ---
 
@@ -145,10 +149,15 @@ We actively track corporate consolidation directly inside the graph using the **
 * **`Apromore_Community_Edition`** *(noted as acquired by Salesforce)*
 
 ### How You Can Contribute
+
 Community members, practitioners, and tool maintainers are warmly invited to keep this knowledge graph accurate and up to date! Feel free to submit a Pull Request or Issue to contribute:
 1. **New Tools & Standards:** Add emerging process modeling, orchestration, AI-agent workflow, or simulation tools along with their `supportsNotation`, `hasLicense`, and `hasCapability` triples.
 2. **Missing Capability & Certification Links:** Enrich existing tool nodes that do not yet have `hasCapability` or `hasCertification` attributes populated.
 3. **Acquisitions, Rebrandings & Retirements:** Add new `isAcquiredBy` links and dated `rdfs:comment` notes whenever vendors merge, rebrand, or sunset products.
 4. **Metadata Enrichment:** Add official homepage URLs (`xsd:anyURI`) and concise descriptions via `rdfs:comment`.
 
-*Base Ontology IRI:* `http://www.semanticweb.org/v0cn037/ontologies/2026/10/process_modeling_tools`
+*Base Ontology IRI:* `http://www.semanticweb.org/xiaoqi/ontologies/2026/10/process_modeling_tools`
+
+---
+
+Last updated at 2026-11-27
