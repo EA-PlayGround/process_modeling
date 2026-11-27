@@ -136,7 +136,7 @@ Process_Modeling/
 
 ## References and Related Projects
 
-- **EKA — Executable Knowledge Architecture:** The overarching framework connecting enterprise architecture, meta-models, ontologies, knowledge graphs, and executable intelligence.
+- **[EKA — Executable Knowledge Architecture](https://xiaoqi.com):** The overarching framework connecting enterprise architecture, meta-models, ontologies, knowledge graphs, and executable intelligence.
 - **[Pizza OWL Ontology Practice](https://github.com/yasenstar/protege_pizza):** A practical exploration of ontology engineering using Protégé and OWL, which inspired this next stage of research.
 - **[EKA Community](https://github.com/EKA-Community/eka):** The EKA framework, its concepts, publications, and related knowledge resources.
 
