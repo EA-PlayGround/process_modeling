@@ -15,6 +15,8 @@ Ontology provides the foundation for representing concepts, relationships, const
 
 This leads to the next stage of exploration: the world of **BPMN, DMN, and MES**.
 
+![EKA Knowledge Evolution](img/EKA-Knowledge-Evolution.png)
+
 This repository is intended to support that journey and contribute to the knowledge foundation for **EKA Volume 5**.
 
 ## Research Scope
