@@ -22,10 +22,10 @@ The ontology follows a three-tier core hierarchy enriched with capability, licen
 ```text
                                      ┌───────────────────┐
                                      │   Certification   │
-                                     └─────────▲─────────┘
-                                        │      │
-                      appliesToNotation │      │ hasCertification
-                                        ▼      │
+                                     └──────────────▲────┘
+                                          │         │___________________________________
+                        appliesToNotation │                                             │ hasCertification
+                                          ▼                                             │
 ┌────────────────────┐  hasDomain  ┌─────────────────────┐  supportsNotation  ┌─────────────────────────┐
 │   ModelingDomain   │◄────────────│  NotationOrStandard │◄───────────────────│   ProcessModelingTool   │
 │     (Level 1)      │             │      (Level 2)      │                    │        (Level 3)        │
